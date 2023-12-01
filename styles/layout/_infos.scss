@@ -1,0 +1,236 @@
+@include for-phone-only {
+    .about p {
+        margin: var(--spacer-sm) 0;
+        font-size: var(--font-size-large);
+    }
+    
+    .about img {
+        width: 100%;
+        border-radius: 1rem;
+    }
+    
+    .skills__item {
+        margin: var(--spacer-sm) 0;
+        display: flex;
+        flex-direction: column-reverse;
+    
+    }
+    
+    
+    .skills__item .description {
+        margin: var(--spacer-xs) 0;
+    }
+    
+    .description h4 {
+        margin: var(--spacer-sm) 0;
+    }
+
+    .description p {
+        font-size: var(--font-size-large);
+
+    }
+    
+    .skillset h4 {
+        margin: var(--spacer-xs) 0;
+        display: none;
+    
+    }
+    
+    .skillset ul li {
+        margin: 10px 0;
+    }
+    
+    .xp th {
+        display: none;
+    }
+    
+    .xp tr td:nth-child(2) {
+        display: none;
+    }
+    
+    .xp table {
+        width: 100%;
+    }
+    
+    
+    .xp td {
+        text-align: left;
+        border-bottom: var(--color-on-bg) solid 1px;
+        padding: var(--spacer-xs) 0;
+    
+    }
+    
+    .xp td:last-child {
+        text-align: right;
+    }
+    
+    
+    .education th {
+        display: none;
+    }
+    
+    .education tr td:nth-child(2) {
+        display: none;
+    }
+    
+    .education table {
+        width: 100%;
+    }
+    
+    
+    .education td {
+        text-align: left;
+        border-bottom: var(--color-on-bg) solid 1px;
+        padding: var(--spacer-xs) 0;
+    
+    }
+    
+    .education td:last-child {
+        text-align: right;
+    }
+}
+
+
+@include for-tablet-portrait-up {
+    #infos h2 {
+        // margin-top: var(--spacer-xxl);
+        margin-bottom: 0;
+    }
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about p {
+        max-width: 1000px;
+        font-size: var(--font-size-xl);
+        margin: var(--spacer-sm) 0;
+    }
+
+    .about h4 {
+        font-weight: 600;
+        border-top: rgba($color: #000000, $alpha: 0.2) 1px solid;
+        padding-top: 24px;
+    }
+
+    .about img {
+        transform: rotate(5deg);
+        border-radius: 1rem;
+        width: auto;
+    }
+
+    .skills__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: var(--spacer-xl) 0;
+    }
+
+    .skillset {
+        width: 350px;
+    }
+
+    .skillset h4 {
+        padding-bottom: 24px;
+        border-bottom: var(--color-on-bg) 1px solid;
+        margin-bottom: 24px;
+        display: flex;
+        text-transform: uppercase;
+    }
+
+    .skillset ul li {
+        margin: 10px 0;
+    }
+
+    .description {
+        margin-left: var(--spacer-xl);
+        width: 100%;
+    }
+
+    .description .label {
+        padding-bottom: 24px;
+        border-bottom: var(--color-on-bg) 1px solid;
+        margin-bottom: 24px;
+    }
+
+    .description p {
+        font-size: var(--font-size-xl);
+        max-width: 600px;
+    }
+
+    // .about .skillset {
+    //     display: flex;
+    //     flex-direction: column;
+    //     width: 100%;
+    //     margin-left: 80px;
+    //     max-width: 450px;
+    // }
+
+    // .skillset > div {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: space-between;
+    // }
+
+    // .about .skills {
+    //     margin: var(--spacer-sm) 0;
+    // }
+
+    // .about .skills li {
+    //     font-size: var(--font-size-regular);
+    //     text-transform: uppercase;
+    //     font-weight: 200;
+    //     margin: 10px 0;
+    // }
+
+    .xp, .education {
+        margin: var(--spacer-xl) 0;
+    }
+
+    .xp table, .education table {
+        width: 100%;
+    }
+
+    .xp th, .education th {
+        font-size: var(--font-size-small);
+        padding-bottom: 24px;
+        text-transform: uppercase;
+    }
+
+    .xp th, td {
+        text-align: left;
+        border-bottom: var(--color-on-bg) solid 1px;
+    }
+
+    .education tr {
+        vertical-align: center;
+        
+    }
+
+    .education th, td {
+        text-align: left;
+        border-bottom: var(--color-on-bg) solid 1px;
+    }
+
+    .education td {
+        padding: var(--spacer-xs) 0;
+        font-size: var(--font-size-large);
+    }
+
+    .education th:last-child, td:last-child {
+        text-align: right;
+    }
+
+
+
+    .xp td {
+        padding: var(--spacer-xs) 0;
+        font-size: var(--font-size-large);
+    }
+
+    .xp th:last-child, td:last-child {
+        text-align: right;
+    }
+}

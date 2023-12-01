@@ -1,0 +1,41 @@
+
+
+.archive__list {
+    column-fill: initial;
+    column-count: 1;
+    column-gap: 40px;
+}
+
+.archive__item {
+    // outline: greenyellow solid 1px;
+    margin-bottom: var(--spacer-regular);
+}
+
+.archive__item img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.archive__item h3 {
+    margin: var(--spacer-xs) 0;
+    font-size: var(--font-size-xl);
+}
+
+
+@include for-tablet-portrait-up {
+    .archive__list {
+        column-fill: initial;
+        column-count: 2;
+        column-gap: 40px;
+    }
+    
+    .archive__item {
+        // outline: greenyellow solid 1px
+    }
+
+    .archive__item.offset {
+        padding-top: var(--spacer-regular);
+    }
+
+
+}

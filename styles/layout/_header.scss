@@ -1,0 +1,46 @@
+.masthead {
+
+    width: 100%;
+    padding-top: var(--spacer-large);
+    // position: sticky;
+    // top: 0;
+}
+
+// .masthead .brand {
+//     text-transform: uppercase;
+//     font-weight: 900;
+// }
+
+.masthead a {
+    text-decoration: none;
+    color: var(--color-on-bg);
+    font-size: var(--font-size-regular);
+}
+
+.masthead nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // border-top: var(--color-on-bg) solid 2px;
+    // border-bottom: var(--color-on-bg) solid 2px;
+
+    padding: 22px 0;
+}
+
+.masthead nav ul {
+    display: flex;
+}
+
+.masthead nav ul li {
+    margin: 0 10px;
+    // text-transform: uppercase;
+}
+
+.masthead nav ul li:last-child {
+    margin-right: 0;
+}  
+
+@include for-tablet-portrait-up {
+
+}
+
