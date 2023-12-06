@@ -2,7 +2,8 @@
     --color-primary: #000; 
     --color-secondary: #fff; 
 
-    --color-accent: yellow;
+    --color-accent: #f53c20;
+    // --color-accent: #ffff64;
 
     --color-bg: var(--color-primary); 
     --color-on-bg: var(--color-secondary); 
@@ -14,7 +15,7 @@
     /* Fonts */
     /* https://typescale.com/ */
 
-    --font-size-small: 0.667rem; 
+    --font-size-small: 12px; 
     --font-size-regular: 1rem; 
     --font-size-large: 1.5rem; 
     --font-size-xl: 2.25rem; 

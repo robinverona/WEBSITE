@@ -1,28 +1,93 @@
 footer {
-    margin-top: var(--spacer-xxl);
-    padding-bottom: var(--spacer-large);
+    margin: 48px var(--spacer-xs) 0 var(--spacer-xs);
+    border-top: solid 1px var(--color-on-bg);
+
 }
 
-footer a {
-    text-decoration: none;
-    color: var(--color-on-bg);
+.footer__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: var(--spacer-xs) 0;
+
+    & a, & ul li {
+        font-size: var(--font-size-large);
+        text-decoration-color: var(--color-accent);
+        color: var(--color-on-bg);
+    }
+
+    & ul li {
+        text-align: right;
+        margin: 10px 0;
+    }
 }
 
-footer .footer__labels {
+.footer__links a:first-child {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--spacer-xs);
+}
+
+.footer__links ul li  {
+    text-align: left;
+}
+
+.footer__labels {
+    display: none;
+}
+
+@include for-tablet-portrait-up {
+    
+footer {
+    // outline: greenyellow solid 1px;
+    margin: var(--spacer-large) 0;
+    border-top: none;
+    @include for-tablet-portrait-up {
+        padding: 48px var(--spacer-large) 0 var(--spacer-large);
+
+    }
+}
+
+.footer__labels {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 24px;
-    border-bottom: var(--color-on-bg) solid 1px;
-    font-size: var(--font-size-small);
+    border-bottom: solid 1px var(--color-on-bg);
+    padding: 24px 0;
+
+    & span {
+        text-transform: uppercase;
+        font-size: var(--font-size-small);
+        font-weight: 300;
+
+    }
 }
 
-footer .footer__links {
+.footer__links {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: var(--spacer-sm) 0;
+    flex-direction: row;
 
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: var(--spacer-xs) 0;
+
+    & a, & ul li {
+        font-size: var(--font-size-xl);
+        text-decoration: underline;
+        text-decoration-color: var(--color-accent);
+        color: var(--color-on-bg);
+    }
+
+    & ul li {
+        text-align: right;
+        margin: 10px 0;
+    }
+}
+
+.footer__links a:first-child {
     font-size: var(--font-size-xl);
+    margin-bottom: 0;
+}
+
 
 }

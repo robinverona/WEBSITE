@@ -4,72 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static starter</title>
+    <title>Robin Verona — Développeur / Designer</title>
     <link rel="stylesheet" href="styles/app.css">
 </head>
 <body>
-    <main>
-        <!-- HEADER -->
-
-        <header class="masthead">
-            <nav>
-                <a href="" class="brand">
-                    <!-- <img src="./images/logo.svg" alt=""> -->
-                    Robin Verona
-                </a>
-                <ul>
-                    <li>
-                        <a href="">Projets</a>
-                    </li>
-                    <li>
-                        <a href="./infos.html">Infos</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+    <!-- Mobile Menu -->
+    <!-- <div class="mobile-menu">
+        <header>
+            <a href="" class="brand">Robin Verona</a>
+            <button>Fermer</button>
         </header>
+        <ul>
+            <li>
+                <a href="">Portfolio</a>
+            </li>
+            <li>
+                <a href="./about.html">À propos</a>
+            </li>
+        </ul>
+        <footer>
+            <a href="" class="link">Email</a>
+            <a href="" class="link">Instagram</a>
+        </footer>
+    </div> -->
 
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="" class="brand">Robin Verona</a>
+            <ul class="navigation">
+                <li>
+                    <a href="">Portfolio</a>
+                </li>
+                <li>
+                    <a href="./about.html">À propos</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <button id="menu">Menu</button>
+        </nav>
+    </header>
+    <main>
         <!-- ARCHIVE -->
-
         <section id="archive">
-            <h2>Projets</h2>
+            <h1>Portfolio</h1>
             <ul class="archive__list">
                 <li class="archive__item">
-                    <img src="./images/placeholder.png" alt="">
+                    <div class="item__image">
+                        <img src="./images/placeholder.png" alt="">
+                        <div class="glow"></div>
+                    </div>
+
                     <h3>Rap ou poésie</h3>
+                    <p class="subtitle">Quizz illustrant la porosité entre le rap et la poésie</p>
                 </li>
                 <li class="archive__item">
                     <img src="./images/placeholder.png" alt="">
                     <h3>Zero to infinity</h3>
+                    <p class="subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
                 </li>
                 <li class="archive__item offset">
                     <img src="./images/placeholder.png" alt="">
-                    <h3>Project title 3</h3>
+                    <h3>Enténébré</h3>
+                    <p class="subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, voluptate atque quidem blanditiis!</p>
                 </li>
                 <li class="archive__item">
                     <img src="./images/placeholder.png" alt="">
-                    <h3>Project title 4</h3>
+                    <h3>Make.org</h3>
+                    <p class="subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, voluptate atque quidem blanditiis iure ipsa !</p>
                 </li>
             </ul>
+            <!-- <div class="see-more">
+                <a href="" class="">Voir plus de projets</a>
+            </div> -->
         </section>
-        
-        <footer id="contact">
-            <div class="footer__labels">
-                <span>
-                    EMAIL
-                </span>
-                <span>
-                    LIENS
-                </span>
-            </div>
-            <div class="footer__links">
-                <a href="">Mail</a>
-                <a href="">Lien</a>
-            </div>
-        </footer>
     </main>
+    <footer id="contact">
+        <div class="footer__labels">
+            <span>email</span>
+            <span>liens</span>
+        </div>
+        <div class="footer__links">
+            <a class="link" href="">contact@robinverona.com &#8599;</a>
+            <ul>
+                <li>
+                    <a class="link" href="">Instagram &#8599;</a>
+                </li>
+                <li>
+                    <a class="link" href="">GitHub &#8599;</a>
+                </li>
+                <!-- <li>
+                    <a href="">Behance &#8599;</a>
+                </li> -->
+            </ul>
+        </div>
+    </footer>
     <script src="js/index.js"></script>
 </body>
 </html>

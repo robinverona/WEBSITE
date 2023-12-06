@@ -1,36 +1,69 @@
-// @font-face {
-//     font-family: 'disket_monoregular';
-//     src: url('../../assets/fonts/disket/disket-mono-regular-webfont.woff2') format('woff2'),
-//          url('../../assets/fonts/disket/disket-mono-regular-webfont.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
+@font-face {
+    font-family: 'sporting_grotesquenormal';
+    src: url('../../fonts/SportingGrotesque/sporting_grotesque_normal-webfont.woff2') format('woff2'),
+         url('../../fonts/SportingGrotesque/sporting_grotesque_normal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-// }
+}
 
-// @font-face {
-// font-family: 'sk-modernistregular';
-// src: url('../../assets/fonts/modernist/sk-modernist-regular-webfont.woff2') format('woff2'),
-//         url('../../assets/fonts/modernist/sk-modernist-regular-webfont.woff') format('woff');
-//         font-weight: 400;
-//         font-display: swap;
-//         font-style: normal;
-// }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+
+
+@font-face {
+    font-family: 'sk-modernist';
+    src: url('../../fonts/modernist/sk-modernist-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/modernist/sk-modernist-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--text-headings);
 }
 
-h2 {
+// p, span {
+//     font-weight: 300;
+// }
+
+h1 {
     margin-top: var(--spacer-xxl);
     margin-bottom: var(--spacer-xl);
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-2xl); 
+}
 
+h2 {
+    margin-top: var(--spacer-xl);
+    margin-bottom: var(--spacer-xl);
+    font-size: var(--font-size-xl);
 }
 
 h3 {
     margin-top: var(--spacer-xl);
     margin-bottom: var(--spacer-xl);
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-large);
 
+}
+
+@include for-tablet-portrait-up {
+    h1 {
+        margin-top: var(--spacer-xxl);
+        margin-bottom: var(--spacer-xl);
+        font-size: var(--font-size-3xl); 
+    }
+    
+    h2 {
+        margin-top: var(--spacer-xl);
+        margin-bottom: var(--spacer-xl);
+        font-size: var(--font-size-2xl);
+    }
+    
+    h3 {
+        margin-top: var(--spacer-xl);
+        margin-bottom: var(--spacer-xl);
+        font-size: var(--font-size-xl);
+    
+    }
 }
