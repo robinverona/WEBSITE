@@ -1,0 +1,34 @@
+.single__infos {
+    // outline: greenyellow solid 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: var(--spacer-xl) 0;
+}
+
+.infos {
+    max-width: 500px;
+
+}
+
+.infos h4 {
+    font-size: var(--font-size-small);
+    padding: 24px 0;
+    border-bottom: solid 1px var(--color-on-bg);
+    margin: var(--spacer-xs) 0;
+    text-transform: uppercase;
+}
+
+.infos ul {
+    display: flex;
+    list-style: disc;
+    flex-wrap: wrap;
+}
+
+.infos ul li {
+    margin: 12px;
+}
+
+#single img {
+    width: 100%;
+}

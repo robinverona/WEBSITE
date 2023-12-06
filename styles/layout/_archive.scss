@@ -14,6 +14,11 @@
     border-radius: 1rem;
 }
 
+.archive__item a {
+    color: var(--color-on-bg);
+    text-decoration: none;
+}
+
 .archive__item h3 {
     margin: var(--spacer-xs) 0 20px 0;
     font-size: var(--font-size-xl);
