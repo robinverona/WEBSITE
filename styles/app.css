@@ -107,7 +107,7 @@ h3 {
 }
 :root {
   --color-primary: #000;
-  --color-secondary: #fff;
+  --color-secondary: rgba(255, 255, 255, 0.9);
   --color-accent: #f53c20;
   --color-bg: var(--color-primary);
   --color-on-bg: var(--color-secondary);
@@ -189,6 +189,10 @@ header a, button {
   color: var(--color-on-bg);
   text-decoration: none;
   font-size: var(--font-size-regular);
+  transition: opacity 0.5s ease;
+}
+header a:hover, button:hover {
+  opacity: 0.5;
 }
 
 header nav {

@@ -1,9 +1,9 @@
 :root {
     --color-primary: #000; 
-    --color-secondary: #fff; 
+    --color-secondary: rgba(255, 255, 255, 0.9); 
 
     --color-accent: #f53c20;
-    // --color-accent: #ffff64;
+    // --color-accent: #222;
 
     --color-bg: var(--color-primary); 
     --color-on-bg: var(--color-secondary); 
